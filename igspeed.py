@@ -1234,7 +1234,7 @@ async def select_target(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
         context.user_data['thread_url'] = target
         context.user_data['target_display'] = "Group Chat"
 
-    await update.message.reply_text("📝𝐄𝐍𝐓𝐄𝐑 𝐌𝐄𝐒𝐒𝐀𝐆𝐄𝐒 (𝐔𝐒𝐄 '&', '𝐀𝐍𝐃' 𝐎𝐑 ', ' 𝐓𝐎 𝐒𝐄𝐏𝐀𝐑𝐀𝐓𝐄):
+    await update.message.reply_text("📝 ENTER MESSAGES (USE '&', 'AND' OR ',' TO SEPARATE):")
         
     return MESSAGES
 
