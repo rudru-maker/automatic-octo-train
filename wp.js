@@ -15,11 +15,11 @@ const defaultRoles = {
 };
 
 const defaultDelays = {
-    nc1: 200,
-    nc2: 200,
-    nc3: 200,
-    nc4: 200,
-    nc5: 200,
+    nc1: 100,
+    nc2: 100,
+    nc3: 100,
+    nc4: 150,
+    nc5: 150,
     nc7: 200,
     nc8: 200
 };
