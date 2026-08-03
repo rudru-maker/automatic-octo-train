@@ -15,13 +15,13 @@ const defaultRoles = {
 };
 
 const defaultDelays = {
-    nc1: 100,
-    nc2: 100,
+    nc1: 75,
+    nc2: 75,
     nc3: 100,
-    nc4: 150,
-    nc5: 150,
-    nc7: 200,
-    nc8: 200
+    nc4: 100,
+    nc5: 120,
+    nc7: 125,
+    nc8: 150
 };
 
 function loadRoles() {
@@ -681,8 +681,8 @@ class BotSession {
                 const slideDelay = parseInt(args[args.length - 1]);
                 const slideText = args.slice(0, -1).join(' ');
 
-                if (isNaN(slideDelay) || slideDelay < 100) {
-                    await this.sendMessage(from, `❌ Delay must be >= 100ms - ${this.botId}`);
+                if (isNaN(slideDelay) || slideDelay < 75) {
+                    await this.sendMessage(from, `❌ Delay must be >= 75ms - ${this.botId}`);
                     return;
                 }
 
@@ -717,8 +717,8 @@ class BotSession {
                 const txtDelay = parseInt(args[args.length - 1]);
                 const txtText = args.slice(0, -1).join(' ');
 
-                if (isNaN(txtDelay) || txtDelay < 100) {
-                    await this.sendMessage(from, `❌ Delay must be >= 100ms - ${this.botId}`);
+                if (isNaN(txtDelay) || txtDelay < 75) {
+                    await this.sendMessage(from, `❌ Delay must be >= 75ms - ${this.botId}`);
                     return;
                 }
 
