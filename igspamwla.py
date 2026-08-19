@@ -39,7 +39,7 @@ logging.basicConfig(
 AUTHORIZED_FILE = 'authorized_users.json'
 TASKS_FILE = 'tasks.json'
 OWNER_TG_ID = int(os.environ.get('6677832525', 0))
-BOT_TOKEN = os.environ.get('8828882943:AAEbKIM4ycTU0vPn7sDjZWjAU7HsJJ4ZPkE')
+BOT_TOKEN = os.environ.get('8828882943:AAEjOfQZ2A3YZ1lDkD8r0zCxCUxmgHfjn-4')
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
 
 authorized_users = []  # list of {'id': int, 'username': str}
