@@ -32,7 +32,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-TOKEN = "8828882943:AAEJHzjMXacPx11LvdahYqnN0wL1gPrmALw"
+TOKEN = "8828882943:AAELKX0NNui5hItGt1KAB3b1DNrcOU6ZbPc"
 OWNER_ID = 6677832525
 PASSWORD = "デーヴァ パパ"
 
