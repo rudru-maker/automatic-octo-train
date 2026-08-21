@@ -59,7 +59,7 @@ ADMIN_ID = 6677832525 #yeha koi admin ya tumhara chat id dalo
 YOUR_USERNAME = '@godzx3r0s' #yeha tumhra username dala
 UPDATE_CHANNEL = 'https://t.me/godtonyhun' #yeha chnl link dalo''
 FORCE_JOIN_CHANNELS = {
-"https://t.me/godtonyhun":"𝐉𝐎𝐈𝐍",
+"https://t.me/":"𝐉𝐎𝐈𝐍",
 
 }
 
