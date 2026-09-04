@@ -41,7 +41,7 @@ BOT_TOKENS = [
    
 ]
 
-OWNER_ID = [8678482053, 8996032103]
+OWNER_ID = (8678482053, 8996032103)
 SUDO_FILE = "sudo.json"
 SAFE_USERS_FILE = "safe_users.json"
 GROUPS_FILE = "raid_groups.json"
@@ -149,7 +149,7 @@ VOICE_CHARACTERS = {
 # ==================== GLOBAL STATE ====================
 class MegaState:
     def __init__(self):
-        self.sudo_users: Set[int] = {OWNER_ID}
+        self.sudo_users: Set[int] = set(OWNER_ID)
         self.safe_users: Set[int] = set()
         self.safe_usernames: Dict[str, int] = {}
         self.raid_groups: Set[int] = set()
