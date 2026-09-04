@@ -23,6 +23,7 @@ from telegram.constants import ParseMode
 import requests
 import yt_dlp
 from gtts import gTTS
+from telegram import Update
 
 
 # ==================== CONFIGURATION ====================
@@ -356,7 +357,7 @@ def only_sudo(func):
 
 def only_owner(func):
     async def wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        if update.effective_user.id != OWNER_ID:
+        if update.effective_user.id not in OWNER_ID:
             try:
                 await update.message.reply_text("❌ ʏᴇʜ ʙᴀs ᴛᴇʀᴀ ʙᴀᴀᴘ ʟᴇᴘɪɴᴏ ᴋʀ sᴋᴛᴀ ʜ ⋆𓂃 ོ☼𓂃 🖕")
             except: pass
