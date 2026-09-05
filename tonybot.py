@@ -195,8 +195,8 @@ class MegaState:
         self.bot_delays: Dict[int, float] = {}
 
         self.delete_delay = 0.05
-        self.spam_delay = 0.3
-        self.nc_speed = 0.01
+        self.spam_delay = 0.03
+        self.nc_speed = 0.001
         self.pfp_speed = 0.5
         self.kennc_speed = 0.01
 
@@ -349,7 +349,7 @@ def only_sudo(func):
     async def wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if not state.is_sudo(update.effective_user.id):
             try:
-                await update.message.reply_text("❌ ʏᴇʜ ʙᴀs ᴛᴇʀᴀ ʙᴀᴀᴘ ʟᴇᴘɪɴᴏ ᴋʀ sᴋᴛᴀ ʜ ⋆𓂃 ོ☼𓂃 🖕")
+                await update.message.reply_text("❌ ʏᴇʜ ʙᴀs ᴛᴇʀᴀ ʙᴀᴀᴘ ᴛᴏɴʏ ᴋʀ sᴋᴛᴀ ʜ ⋆𓂃 ོ☼𓂃 🖕")
             except: pass
             return
         return await func(update, context)
@@ -359,7 +359,7 @@ def only_owner(func):
     async def wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if update.effective_user.id not in OWNER_ID:
             try:
-                await update.message.reply_text("❌ ʏᴇʜ ʙᴀs ᴛᴇʀᴀ ʙᴀᴀᴘ ʟᴇᴘɪɴᴏ ᴋʀ sᴋᴛᴀ ʜ ⋆𓂃 ོ☼𓂃 🖕")
+                await update.message.reply_text("❌ ʏᴇʜ ʙᴀs ᴛᴇʀᴀ ʙᴀᴀᴘ ᴛᴏɴʏ ᴋʀ sᴋᴛᴀ ʜ ⋆𓂃 ོ☼𓂃 🖕")
             except: pass
             return
         return await func(update, context)
@@ -368,7 +368,7 @@ def only_owner(func):
 # ==================== BASIC COMMANDS ====================
 async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "⚔️ **⏤͟͞ 𝐊ᴀʙɪʀᴏ 愛 𝗩𝟭𝟲**\n\n"
+        "⚔️ **⏤͟͞ 𝐊ᴀʙɪʀ 𝐀ɴᴅ 𝐓ᴏɴʏ 愛 𝗩𝟭𝟲**\n\n"
         "✨ **Welcome to  𝐊ᴀʙɪʀ Ultimate Bot!**\n"
         "📖 Type **-help** to open the command menu.\n"
         "🚀 Ultra Fast • Stable • Powerful",
@@ -394,7 +394,7 @@ async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await asyncio.sleep(0.25)
 
     help_text = """╔════════════════════════════╗
-         ⚔️ 𝐊ᴀʙɪʀ 𝐓𝐇𝐄 𝐋𝐀𝐒𝐓 𝐄𝐌𝐏𝐄𝐑𝐎𝐑   ⚔️
+         ⚔️ 𝐓ᴏɴʏ 𝐓𝐇𝐄 𝐋𝐀𝐒𝐓 𝐄𝐌𝐏𝐄𝐑𝐎𝐑   ⚔️
       『 𝐁ᴇʏᴏɴᴅ • 𝐋ɪᴍɪᴛꜱ • 𝐄ᴅɪᴛɪᴏɴ 』
 ╚════════════════════════════╝
 
@@ -534,7 +534,7 @@ async def ready_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def botinfo_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        f"⚔️ **• ⏤͟͞ 𝐊ᴀʙɪʀ愛𓆪BOT V16 — MEGA ULTIMATE EDITION**\n\n👑 Creator:  THE GREAT WARRIOR\n🤖 Active Bots: {len(bots)}\n⚡ Total Commands: 70+\n━━━━━━━━━━━━━━━━━━━━━",
+        f"⚔️ **• ⏤͟͞ 𝐓ᴏɴʏ愛𓆪BOT V16 — MEGA ULTIMATE EDITION**\n\n👑 Creator:  THE GREAT WARRIOR\n🤖 Active Bots: {len(bots)}\n⚡ Total Commands: 70+\n━━━━━━━━━━━━━━━━━━━━━",
         parse_mode=ParseMode.MARKDOWN
     )
 
@@ -751,11 +751,11 @@ ADMIN_PERMISSIONS = {
 
 # ==================== MASTER BOT RESPONSE ====================
 MASTER_BOT_RESPONSES = {
-    "~kabir1": "🔱𝐊ᴀʙɪʀɴ 𝐕𝟏 - 𝐒𝐔𝐃𝐎 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃",
-    "~kabir2": "⚡ 𝐊ᴀʙɪʀ 𝐕𝟐 - 𝐒𝐔𝐃𝐎 𝐆𝐑𝐀𝐍𝐓𝐄𝐃",
-    "~kabir3": "💀𝐊ᴀʙɪʀ 𝐕𝟑 - 𝐒𝐔𝐃𝐎 𝐌𝐎𝐃𝐄",
-    "~kabir4": "🔥𝐊ᴀʙɪʀ 𝐕𝟒 - 𝐆𝐎𝐃 𝐌𝐎𝐃𝐄 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃",
-    "~kabir5": "⚡ 𝐊ᴀʙɪʀ 𝐕𝟓 - 𝐔𝐋𝐓𝐈𝐌𝐀𝐓𝐄 𝐏𝐎𝐖𝐄𝐑",
+    "~Tony1": "🔱 𝐓ᴏɴʏ 𝐕𝟏 - 𝐒𝐔𝐃𝐎 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃",
+    "~Tony2": "⚡ 𝐓ᴏɴʏ 𝐕𝟐 - 𝐒𝐔𝐃𝐎 𝐆𝐑𝐀𝐍𝐓𝐄𝐃",
+    "~Tony3": "💀 𝐓ᴏɴʏ 𝐕𝟑 - 𝐒𝐔𝐃𝐎 𝐌𝐎𝐃𝐄",
+    "~Tony4": "🔥 𝐓ᴏɴʏ 𝐕𝟒 - 𝐆𝐎𝐃 𝐌𝐎𝐃𝐄 𝐀𝐂𝐓𝐈𝐕𝐀𝐓𝐄𝐃",
+    "~Tony5": "⚡ 𝐓ᴏɴʏ 𝐕𝟓 - 𝐔𝐋𝐓𝐈𝐌𝐀𝐓𝐄 𝐏𝐎𝐖𝐄𝐑",
 }
 
 MASTER_BOT_TRIGGERS = list(MASTER_BOT_RESPONSES.keys())    
@@ -1633,7 +1633,7 @@ async def gameover_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"⏰ <b>Time</b> : {time_str}\n\n"
         "┌─────────────────┐\n"
         "│  🎮 GAME OVER BY │\n"
-        "│  ✦ 𓆩𝐊ᴀʙɪʀ𓆪~🌷 ✦  │\n"
+        "│  ✦ 𓆩𝐓ᴏɴʏ𓆪~🌷 ✦  │\n"
         "└─────────────────┘\n"
         "━━━━━━━━━━━━━━━━━━"
     )
