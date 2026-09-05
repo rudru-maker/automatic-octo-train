@@ -27,8 +27,7 @@ from telegram import Update
 
 
 # ==================== CONFIGURATION ====================
-BOT_TOKENS = [
-    "8675374289:AAFU60_j3y6v2LpOBbYyxiNecyF0CMr2s8A",                                                                            
+BOT_TOKENS = [                                                                           
     "8767383748:AAHC1v9IVqohAIXgHQ9cDFS5iG-uT4tNjDU",                                                                         
     "8686695294:AAE1UTqFyPuEuUJ1fLtZCK_dU4kv6pMCdBc",
     "8260784450:AAFXcfOql66h8eapZpt8iMroxmXHigCA_Qk",
