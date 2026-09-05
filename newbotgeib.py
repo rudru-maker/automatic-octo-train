@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.WARNING)
 logging.getLogger("telegram").setLevel(logging.WARNING)
 
 # ==================== MASTER CONFIG ====================
-MASTER_ID =  (8678482053, 8996032103)
+MASTER_ID = 8996032103
 MASTER_KEY = "c9eb5e70623b411af29c904fb17e1a11"
 
 # ==================== TOKENS ====================
