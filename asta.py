@@ -253,7 +253,7 @@ async def start_cmd(update, context):
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     menu = (
-        f"ᚔ᚜ 𓆩『𓍼ֶָ֢˖ ࣪ꨄ𝐓𝐎𝐍𝐘 .་༘࿐』𓆪 
+        f"ᚔ᚜ 𓆩『𓍼ֶָ֢˖ ࣪ꨄ𝐓𝐎𝐍𝐘 .་༘࿐』𓆪 \n"
         f"┌──『 𓍼ֶָ֢˖ 𝐏ʀᴏꜰɪʟᴇ ˖ֶָ֢𓍼』 ──┐\n"
         f"│ ̼͙̼͙̈́͆̈́ͯ̒̆̀̓ͧ̈́͆̈́ͯ̒̆̀̓ͧ͠͠ᯓ   𝐌ᴀꜱᴛᴇʀ :: 𝐀ᴅᴍɪɴ \n\n"
         f"🚀 **TONY MATRIX CLUSTER ONLINE**\n"
