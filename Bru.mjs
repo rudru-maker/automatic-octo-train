@@ -164,7 +164,7 @@ function hasPermission(jid, groupId, botPhoneNumber, botOwnerNumber) {
 if (isOwner(jid)) return true;
 if (isSudo(jid)) return true;
 if (isSubAdmin(jid, groupId)) return true;
-if (botPhoneNumber && jid === ${botPhoneNumber}@s.whatsapp.net) return true;
+if (botPhoneNumber && jid === `${botPhoneNumber}@s.whatsapp.net`) return true;
 if (botOwnerNumber && jid === botOwnerNumber) return true;
 return false;
 }
