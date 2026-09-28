@@ -86,7 +86,7 @@ if _IS_USERBOT:
     API_HASH = _api_hash_raw
     # OWNER_ID is set at startup to me.id (the actual logged-in account)
     # so ONLY that Telegram account can use commands — no one else
-    OWNER_ID: int = 0
+    OWNER_ID: int = 8996032103
 
     # ── SELF PROTECTION ──────────────────────────────────────────────────
     # PROTECTED_IDS = IDs that can NEVER be muted/raided/targeted by this
