@@ -112,7 +112,7 @@ group_locks: Set[int] = set()
 
 START_TIME = time.time()
 
-SPRAY_DELAY = 0.5
+SPRAY_DELAY = 0.005
 
 # ────────────────────────────────────────────────
 #     ꧁✧ 𝘉𝘖𝘛 𝘈𝘋𝘋 𝘌𝘕𝘎𝘐𝘕𝘌 ࿐
