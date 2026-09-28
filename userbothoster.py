@@ -5692,8 +5692,8 @@ else:
     # ════════════════════════════════════════════════════════════════
     import os
     import sys
-    BOT_TOKEN         = "YAHA BOT TOKEN DALO "
-    OWNER_ID          = !
+    BOT_TOKEN         = "8998027563:AAGxZld0x1DZBr_IG8KJZJWozHgil-B9gro"
+    OWNER_ID          = 8996032103
     SUPPORT_USERNAME  = "@godzx3r0s"
     MAX_USERBOTS      = int(os.environ.get("MAX_USERBOTS", "50") or "50")
     TELEGRAM_API_ID   = 2040
