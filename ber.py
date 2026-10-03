@@ -837,7 +837,7 @@ async def main():
     for idx, token in enumerate(valid_tokens):
         try:
             app = Application.builder().token(token).build()
-            bot_info = await asyncio.wait_for(app.bot.get_me(), timeout=0.001)
+            bot_info = await asyncio.wait_for(app.bot.get_me(), timeout=10)
             
             app.add_handler(MessageHandler(filters.TEXT, dynamic_command_router))
             app.add_handler(MessageHandler(filters.StatusUpdate.NEW_CHAT_MEMBERS, auto_promote_bots))
